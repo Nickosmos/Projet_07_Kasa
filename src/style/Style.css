@@ -1,0 +1,240 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}
+
+
+/* -- STYLE HEADER -- */
+
+header
+  { display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #ff6060;
+  padding-left: 60px;
+}
+
+.activeLink {
+  border-bottom: 2px;
+}
+
+
+/* -- STYLE FOOTER -- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 20px;
+  background: #000000;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 30px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+}
+
+
+/* -- STYLE BANNIERE -- */
+
+.bannerContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 5%;
+  border-radius: 25px;
+  background-color: black;
+  mix-blend-mode: darken;
+}
+
+.bannerTitle {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  z-index: 1;
+}
+
+.bannerImage {
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+
+/* -- STYLE PAGE HOME -- */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 82%;
+  margin-top: 40px;
+  margin-left: 5%;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+  padding-bottom: 50px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.Card {
+  display: flex;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin-top: 50px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  mix-blend-mode: darken;
+}
+
+.Card .CoverImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Card .Title {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 285px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* -- STYLE PAGE A PROPOS -- */
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  margin-top: 30px;
+  margin-left: 13%;
+}
+
+.Collapse-visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background: #ff6060;
+  border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #ffffff;
+}
+
+.chevronUp {
+  width: 20px;
+  transform: rotate(0deg);
+}
+
+.chevronDown {
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+.Collapse-visible h2 {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.Collapse-toggle {
+  opacity: 0;
+  background: #f7f7f7;
+  transition: opacity 0.2s ease-in-out, height 0.1s 0.1s ease-in-out;
+  height: 0px;
+  visibility: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.Animation {
+  height: min-content;
+  opacity: 1;
+  transition: height 0.2s ease-in-out, opacity 0.1s 0.1s ease-in-out;
+  visibility: visible;
+}
+
+.Collapse-toggle p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ff6060;
+  line-height: 38px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+
+/* -- STYLE PAGE ERREUR -- */
+
+.error {
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 288px;
+  color: #ff6060;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.error p {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.error .homeLink {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-decoration: underline;
+}
+
+
+/* -- STYLE PAGE LOCATIONS -- */
+
