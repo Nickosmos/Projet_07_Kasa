@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 
-export default function Erreur() {
+export default function Error() {
   const navigate = useNavigate();
   const HomePage = () => {
     navigate("/");
