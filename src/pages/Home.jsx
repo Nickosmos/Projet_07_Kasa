@@ -12,9 +12,9 @@ export default function Home() {
         <Banner title='Chez vous, partout et ailleurs' img={BannerImage} altImg='Paysage côtier' />
       </section>
       <section  className='gallery'>
-        {Data.map((Location) => {
+        {Data.map((Location, id) => {
             return (
-            <Card locId={Location.id} title={Location.title} cover={Location.cover} />
+            <Card locId={Location.id} key={id} title={Location.title} cover={Location.cover} />
         )})}
       </section>
     </div>

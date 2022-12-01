@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from '../assets/logo.svg';
 
 
@@ -10,12 +10,11 @@ export default function Header() {
                 <img src={Logo} alt='Logo Kasa' />
             </div>
             <nav>
-                <Link to="/" className={({ isActive }) => {
-                    return isActive ? "activeLink" : "";
-                }}>Accueil</Link>
-                <Link to="/About" className={({ isActive }) => {
-                    return isActive ? "activeLink" : "";
-                }}>A Propos</Link>
+                <NavLink to="/" className={({ isActive }) =>
+                  isActive ? "activeLink" : undefined
+                }>Accueil</NavLink>
+                <NavLink to="/About" className={({ isActive }) =>
+                  isActive ? "activeLink" : undefined}>A Propos</NavLink>
             </nav>
         </header>
     )
