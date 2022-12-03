@@ -3,21 +3,27 @@ body {
   flex-direction: column;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
+  margin: 0;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+ }
 
 /* -- STYLE HEADER -- */
 
-header
-  { display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 5%;
+header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 5%;
 }
 
 nav {
@@ -62,13 +68,11 @@ footer p {
 
 /* -- STYLE BANNIERE -- */
 
-.bannerContain {
+.bannercontain {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
   margin-top: 40px;
-  margin-left: 5%;
   border-radius: 25px;
   background-color: black;
   mix-blend-mode: darken;
@@ -98,9 +102,7 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
   margin-top: 40px;
-  margin-left: 5%;
   background-color: #F7F7F7;
   border-radius: 25px;
   padding-bottom: 50px;
@@ -141,9 +143,9 @@ footer p {
 .article {
   display: flex;
   flex-direction: column;
-  width: 74%;
+  width: 84%;
   margin-top: 30px;
-  margin-left: 13%;
+  margin-left: 8%;
 }
 
 .Collapse-visible {
@@ -237,3 +239,65 @@ footer p {
 
 /* -- STYLE PAGE LOCATIONS -- */
 
+.maininfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titlesection {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h2 {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.title p {
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  height: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 5px 40px 0 40px;
+}
+
+.ratinghost {
+  display: flex;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hostname {
+  width: 90px;
+  text-align: right;
+  color: #ff6060;
+  font-size: 18px;
+}
+
+.hostpicture {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin-left: 10px;
+}

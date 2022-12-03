@@ -25,31 +25,31 @@ export default function Rental() {
   
 
   return (
-    <div className='main'>
+    <main>
       <Slideshow />
-      <div className="mainInfo">
-        <section className="titleSection">
+      <section className="maininfo">
+        <div className="titlesection">
           <div className="title">
             <h2>{currentRental.title}</h2>
             <p>{currentRental.location}</p>
-            <section  className='tags'>
-              {currentRental.tags.map((tag, tId) => (
-                <p key={tId} className="tag">{tag}</p>
-              ))}
-            </section>
           </div>
-        </section>
-        <section className="ratingHost">
+          <div  className='tags'>
+            {currentRental.tags.map((tag, tId) => (
+              <p key={tId} className="tag">{tag}</p>
+            ))}
+          </div>
+        </div>
+        <div className="ratinghost">
           <div className="host">
-            <p className="hostName">{currentRental.host.name}</p>
-            <img className="hostPicture" src={currentRental.host.picture} alt="host" />
+            <p className="hostname">{currentRental.host.name}</p>
+            <img className="hostpicture" src={currentRental.host.picture} alt="host" />
           </div>
           <div className="rating">
 
           </div>
-        </section>
-      </div>
-      <div className="otherInfos">
+        </div>
+      </section>
+      <section className="otherinfos">
       <Collapse 
         title="Description"
         description={currentRental.description}
@@ -60,8 +60,8 @@ export default function Rental() {
           <li key={eId} className="equipmentlist">{equipment}</li>
         ))}
       />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
   
