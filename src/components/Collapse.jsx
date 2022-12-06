@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import chevron from "../assets/chevronDown.svg";
+import downarrow from "../assets/downarrow.svg";
 
 export default function Collapse(props) {
+  
   const [toggle, setToggle] = useState(false);
 
   const toggleState = () => {
@@ -13,9 +14,9 @@ export default function Collapse(props) {
       <div onClick={toggleState} className="Collapse-visible">
         <h2>{props.title}</h2>
         <img
-          className={toggle ? "chevronDown" : "chevronUp"}
-          src={chevron}
-          alt="Arrow directional"
+          className={toggle ? "uparrow" : "downarrow" }
+          src={downarrow}
+          alt="Arrow"
         />
       </div>
       <div className={toggle ? "Collapse-toggle Animation" : "Collapse-toggle"}>

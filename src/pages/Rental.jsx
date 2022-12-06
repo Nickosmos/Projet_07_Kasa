@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
+import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 
@@ -17,16 +19,13 @@ export default function Rental() {
 
   if(!currentRental) {
     return <Error />;
-  };
+  }else {
 
-  //const rating = currentRental.rating;
-  //const ratingArray = [];
-
-  
+  const rating = currentRental.rating;
 
   return (
     <main>
-      <Slideshow />
+      <Slideshow pictures={currentRental.pictures} alt={currentRental.title} />
       <section className="maininfo">
         <div className="titlesection">
           <div className="title">
@@ -35,7 +34,7 @@ export default function Rental() {
           </div>
           <div  className='tags'>
             {currentRental.tags.map((tag, tId) => (
-              <p key={tId} className="tag">{tag}</p>
+              <Tag key={tId} tag={tag} />
             ))}
           </div>
         </div>
@@ -45,23 +44,27 @@ export default function Rental() {
             <img className="hostpicture" src={currentRental.host.picture} alt="host" />
           </div>
           <div className="rating">
-
+              <Rating rating={rating} />
           </div>
         </div>
       </section>
       <section className="otherinfos">
-      <Collapse 
-        title="Description"
-        description={currentRental.description}
-      />
-      <Collapse
-        title="Equipement"
-        description={currentRental.equipments.map((equipment, eId) => (
-          <li key={eId} className="equipmentlist">{equipment}</li>
-        ))}
-      />
+        <div className="halfsize">
+          <Collapse 
+            title="Description"
+            description={currentRental.description}
+          />
+        </div>
+        <div className="halfsize">
+          <Collapse
+            title="Equipement"
+            description={currentRental.equipments.map((equipment, eId) => (
+              <span key={eId} className="equipmentlist">{equipment}<br/></span>
+            ))}
+          />
+        </div>
       </section>
     </main>
   );
-};
+}};
   
