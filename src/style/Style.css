@@ -158,6 +158,7 @@ footer p {
   padding-left: 2%;
   padding-right: 2%;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .uparrow {
@@ -234,6 +235,7 @@ footer p {
   margin-top: 150px;
   margin-bottom: 100px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -244,16 +246,17 @@ footer p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  width: 100%;
 }
 
 .titlesection {
   display: flex;
   flex-direction: column;
+  width: 75%;
+  margin-top: 30px;
 }
 
 .title h2 {
-  height: 50px;
   font-size: 36px;
   color: #ff6060;
   font-weight: 500;
@@ -280,25 +283,30 @@ footer p {
   margin: 0 10px 0 0;
   background-color: #ff6060;
   border-radius: 10px;
-  padding: 5px 40px 0 40px;
+  padding: 5px 27px 0 27px;
 }
 
 .ratinghost {
   display: flex;
+  flex-direction: column;
   margin-top: 0;
 }
 
 .host {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .hostname {
-  width: 90px;
+  display: flex;
+  align-items: center;
+  width: 95px;
+  height: 60px;
   text-align: right;
   color: #ff6060;
   font-size: 18px;
+  margin: 0;
 }
 
 .hostpicture {
@@ -306,6 +314,17 @@ footer p {
   height: 60px;
   border-radius: 30px;
   object-fit: cover;
+  margin-left: 10px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.star {
   margin-left: 10px;
 }
 
@@ -361,23 +380,26 @@ footer p {
 .slidefunction {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 415px;
 }
 
 .arrows {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  position: absolute;
   align-items: center;
-  width: 90%;
+  width: 96%;
   height: 415px;
-  z-index: 1;
-  margin: 0;
 }
 
 .arrowbutton {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .pictureslide {
@@ -387,7 +409,7 @@ footer p {
 }
 
 .counter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 25px 0;
 }

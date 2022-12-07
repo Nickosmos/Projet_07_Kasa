@@ -21,8 +21,6 @@ export default function Rental() {
     return <Error />;
   }else {
 
-  const rating = currentRental.rating;
-
   return (
     <main>
       <Slideshow pictures={currentRental.pictures} alt={currentRental.title} />
@@ -44,7 +42,7 @@ export default function Rental() {
             <img className="hostpicture" src={currentRental.host.picture} alt="host" />
           </div>
           <div className="rating">
-              <Rating rating={rating} />
+              <Rating rating={currentRental.rating} />
           </div>
         </div>
       </section>
