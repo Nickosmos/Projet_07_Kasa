@@ -1,6 +1,8 @@
 import React from "react";
-import Redstar from "../assets/redstar.svg";
-import Greystar from "../assets/greystar.svg";
+import Redstar from '../../assets/redstar.svg';
+import Greystar from '../../assets/greystar.svg';
+import './Rating.css';
+
 
 export default function Rating(props) {
     

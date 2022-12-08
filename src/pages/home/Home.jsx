@@ -1,8 +1,9 @@
 import React from 'react';
-import Banner from '../components/Banner';
-import Card from '../components/Card';
-import BannerImage from '../assets/bannerHome.png';
-import Data from "../assets/logements.json";
+import Banner from '../../components/banner/Banner';
+import Card from '../../components/card/Card';
+import BannerImage from '../../assets/bannerHome.png';
+import Data from '../../assets/logements.json';
+import './Home.css';
 
 
 export default function Home() {

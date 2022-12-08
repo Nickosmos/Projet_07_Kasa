@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Error from "./Error";
-import Tag from "../components/Tag";
-import Rating from "../components/Rating";
-import Slideshow from "../components/Slideshow";
-import Collapse from "../components/Collapse";
-
-import Data from "../assets/logements.json";
+import Error from '../error/Error';
+import Tag from '../../components/tag/Tag';
+import Rating from '../../components/rating/Rating';
+import Slideshow from '../../components/slideshow/Slideshow';
+import Collapse from '../../components/collapse/Collapse';
+import Data from '../../assets/logements.json';
+import './Rental.css';
 
 
 export default function Rental() {

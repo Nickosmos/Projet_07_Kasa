@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import BannerImage from "../assets/bannerAbout.png";
-
+import Banner from '../../components/banner/Banner';
+import Collapse from '../../components/collapse/Collapse';
+import BannerImage from '../../assets/bannerAbout.png';
+import './About.css';
 
 export default function About() {
     return (

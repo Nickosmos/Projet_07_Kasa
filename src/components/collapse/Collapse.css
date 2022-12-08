@@ -1,0 +1,60 @@
+/* -- STYLE COLLAPSE -- */
+
+.Collapse-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: #ff6060;
+    border-radius: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+.uparrow {
+    width: 20px;
+    transform: rotate(180deg);
+}
+  
+.downarrow {
+    width: 20px;
+    transform: rotate(0deg);
+}
+  
+.Collapse-visible h2 {
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 38px;
+}
+  
+.Collapse-toggle {
+    opacity: 0;
+    background: #f7f7f7;
+    transition: opacity 0.2s ease-in-out, height 0.1s 0.1s ease-in-out;
+    height: 0px;
+    visibility: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+  
+.Animation {
+    height: min-content;
+    opacity: 1;
+    transition: height 0.2s ease-in-out, opacity 0.1s 0.1s ease-in-out;
+    visibility: visible;
+}
+  
+.Collapse-toggle p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ff6060;
+    line-height: 38px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+}

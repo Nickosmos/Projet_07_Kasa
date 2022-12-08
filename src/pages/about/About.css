@@ -1,0 +1,9 @@
+/* -- STYLE ABOUT -- */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-top: 30px;
+    margin-left: 8%;
+}

@@ -1,0 +1,44 @@
+/* -- STYLE SLIDESHOW -- */
+
+.slideshow {
+    display: flex;
+    height: 415px;
+  
+}
+  
+.slidefunction {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 415px;
+}
+  
+.arrows {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    height: 415px;
+}
+  
+.arrowbutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.pictureslide {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+  
+.counter {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+}

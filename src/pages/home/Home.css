@@ -1,0 +1,11 @@
+/* -- STYLE HOME -- */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import downarrow from "../assets/downarrow.svg";
+import downarrow from '../../assets/downarrow.svg';
+import './Collapse.css';
+
 
 export default function Collapse(props) {
   

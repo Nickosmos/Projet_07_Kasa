@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import leftarrow from "../assets/leftarrow.svg";
-import rightarrow from "../assets/rightarrow.svg";
+import leftarrow from '../../assets/leftarrow.svg';
+import rightarrow from '../../assets/rightarrow.svg';
+import './Slideshow.css';
 
 
 export default function Slideshow(props) {
