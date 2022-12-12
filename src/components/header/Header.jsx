@@ -7,7 +7,7 @@ import './Header.css';
 export default function Header() {
     return (
         <header>
-            <div className="Logo">
+            <div className="logo">
                 <img src={Logo} alt='Logo Kasa' />
             </div>
             <nav>

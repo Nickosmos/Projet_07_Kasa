@@ -1,14 +1,15 @@
 import React from "react";
 import Banner from '../../components/banner/Banner';
 import Collapse from '../../components/collapse/Collapse';
-import BannerImage from '../../assets/bannerAbout.png';
+import BannerDesktop from '../../assets/bannerAbout.png';
+import BannerMobile from '../../assets/bannerAboutMob.png';
 import './About.css';
 
 export default function About() {
     return (
       <main>
         <section className='banner'>
-          <Banner img={BannerImage} altImg='Paysage de montagnes' />
+          <Banner imgdesk={BannerDesktop} imgmob={BannerMobile} altImg='Paysage de montagnes' />
         </section>
         <section  className='article'>
           <Collapse

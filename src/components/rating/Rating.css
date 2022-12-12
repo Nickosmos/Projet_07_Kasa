@@ -10,3 +10,25 @@
 .star {
     margin-left: 10px;
 }
+
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (max-width:1024px)
+{
+    .rating {
+        align-items: center;
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width:768px)
+{
+    .star {
+        width: 15px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}

@@ -6,7 +6,6 @@ header {
     width: 90%;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 5%;  
@@ -26,4 +25,29 @@ nav a {
   
 .activeLink {
     border-bottom: 2px solid;
+}
+
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (max-width:768px)
+{   
+    header {
+        margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+        text-transform : uppercase;
+        margin-left: 10px;
+    }
+
+    .activeLink {
+        border-bottom: 1px solid;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
 }

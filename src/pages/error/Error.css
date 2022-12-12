@@ -8,8 +8,8 @@
     font-size: 288px;
     color: #ff6060;
     font-weight: 700;
-    margin-bottom: 30px;
     margin-top: 100px;
+    margin-bottom: 30px;
 }
   
 .error p {
@@ -26,4 +26,44 @@
     margin-bottom: 100px;
     text-decoration: underline;
     cursor: pointer;
+}
+
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (min-width:768px) and (max-width: 1024px)
+{
+    .error h1 {
+        font-size: 192px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .error p {
+        font-size: 24px;
+    }
+
+    .error .homeLink {
+        font-size: 16px;
+        margin-top: 75px;
+   }
+
+}
+
+@media screen and (max-width:768px)
+{ 
+    .error h1 {
+        font-size: 96px;
+        margin-bottom: 10px;
+    }
+
+    .error p {
+        font-size: 18px;
+        margin: 0 8% 0 8%;
+    }
+
+    .error .homeLink {
+        font-size: 14px;
+        margin: 100 0 100 0;
+    }
 }
