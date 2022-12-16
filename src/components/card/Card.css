@@ -9,18 +9,21 @@
     margin-top: 50px;
     margin-left: 2%;
     margin-right: 2%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
   
 .Card .CoverImage {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    opacity: 0.7;
 }
   
 .Card .Title {
     position: absolute;
     text-decoration: none;
     color: white;
+    z-index: 1;
     font-size: 18px;
     margin-top: 285px;
     margin-left: 15px;

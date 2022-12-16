@@ -82,8 +82,8 @@
 }
   
 .halfsize .Collapse-toggle {
-    height: 250px;
     border-radius: 10px;
+    padding-bottom: 15px;
 }
   
 .halfsize h2 {
