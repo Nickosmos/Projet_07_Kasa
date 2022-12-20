@@ -5,7 +5,7 @@ import './Collapse.css';
 
 export default function Collapse(props) {
   
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const toggleState = () => {
     setToggle(!toggle);
